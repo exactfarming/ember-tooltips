@@ -25,7 +25,9 @@ module.exports = {
   },
 
   included: function(app) {
-    this._super.included(app); // For ember-cli-sass
+    // this._super.included(app); // For ember-cli-sass
+
+    app.import('vendor/addons.css');
   },
 
 };
